@@ -8,6 +8,7 @@ public class EnemyWave : MonoBehaviour, IActorTemplate
     int travelSpeed;
     int fireSpeed;
     int hitPower;
+    int score;
 
     [SerializeField]
     float verticalSpeed = 2;
@@ -24,6 +25,7 @@ public class EnemyWave : MonoBehaviour, IActorTemplate
         health = actorModel.health;
         travelSpeed = actorModel.speed;
         hitPower = actorModel.hitPower;
+        score = actorModel.score;
     }
     public void Die()
     {
@@ -39,6 +41,7 @@ public class EnemyWave : MonoBehaviour, IActorTemplate
             }
             if (health <= 0)
             {
+                GameManager.Instance.GetComponent<ScoreManager>().SetScore(score);
                 Die();
             }
         }
@@ -56,5 +59,6 @@ public class EnemyWave : MonoBehaviour, IActorTemplate
         time += Time.deltaTime;
         sineVer.y = Mathf.Sin(time * verticalSpeed) * verticalAmplitude;
         transform.position = new Vector3(transform.position.x + travelSpeed * Time.deltaTime, transform.position.y + sineVer.y, transform.position.z);
+        Debug.Log(transform.position);
     }
 }

@@ -16,7 +16,8 @@ MonoBehaviour:
   attackType: 0
   description: Typically in groups.
   health: 1
-  speed: 50
+  speed: -30
   hitPower: 1
-  actor: {fileID: 100000, guid: 265abd8139f832b43a7821704b989434, type: 3}
+  score: 200
+  actor: {fileID: 5558037776178768553, guid: 88c7bd2542de6904aa0c46689e67cd26, type: 3}
   actorsBullets: {fileID: 0}

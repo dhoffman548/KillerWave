@@ -33,6 +33,7 @@ public class EnemySpawner : MonoBehaviour
         GameObject enemy = GameObject.Instantiate(actorModel.actor) as GameObject;
         enemy.GetComponent<IActorTemplate>().ActorStats(actorModel);
         enemy.name = actorModel.actorName.ToString();
+        Debug.Log("Spawned it!");
         return enemy;
     }
 }
