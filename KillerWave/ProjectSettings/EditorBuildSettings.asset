@@ -6,30 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/shop.unity
+    guid: 5af6e0a7de66e9e448d921c8dc84e42c
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Scene/bootUp.unity
-    guid: 3805e56d9580ebc4483e56dd924622ea
-  - enabled: 0
     path: Assets/Scene/title.unity
-    guid: 8ea69da814d11a847addb2b5d7102253
-  - enabled: 0
-    path: Assets/Scene/shop.unity
-    guid: c52238c4b2df6704b9d9a097c6698245
-  - enabled: 0
-    path: Assets/Scene/testLevel.unity
-    guid: 04b30776798fcc24aa9fa4619488d8d3
-  - enabled: 0
-    path: Assets/Scene/level1.unity
-    guid: e3d47a381cd4c6144a0777546c572d65
-  - enabled: 0
-    path: Assets/Scene/level2.unity
-    guid: 51b1aab5f8a393046b9842d2479ed702
-  - enabled: 0
-    path: Assets/Scene/level3.unity
-    guid: bb95840e5f51f3f40b35304d3b1a5e10
+    guid: 681f7d8b9e145334289e11fe94fd511c
   - enabled: 0
     path: Assets/Scene/gameOver.unity
-    guid: 2b10c7902732ea24ebd7a998be1b1726
+    guid: 144a61d6ad6635049b2ae5259204736c
+  - enabled: 0
+    path: Assets/Scene/level1.unity
+    guid: 56e9ec56bab29794a9b2b504711dbdf3
+  - enabled: 0
+    path: Assets/Scene/level2.unity
+    guid: c358be7c474ea494bbf3e90d20cebb7d
+  - enabled: 0
+    path: Assets/Scene/level3.unity
+    guid: 6f09531d6f821034c8d83fe3a3cbfbf5
+  - enabled: 0
+    path: Assets/Scene/bootUp.unity
+    guid: 888cceaad8067404d9bb7e20dac025f7
   m_configObjects: {}

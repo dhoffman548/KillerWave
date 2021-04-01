@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 8663be8114f3815418b64b797807a9d4
+guid: f8f58aa8cb3569f489f2aeb66ec57053
+timeCreated: 1590051043
+licenseType: Pro
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - actorModel: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
