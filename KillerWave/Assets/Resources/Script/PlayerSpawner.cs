@@ -9,7 +9,6 @@ public class PlayerSpawner : MonoBehaviour
 	void Start()
 	{
 		CreatePlayer();
-		GetComponentInChildren<Player>().enabled = true;
 	}
 	
 	void CreatePlayer()
@@ -40,5 +39,6 @@ public class PlayerSpawner : MonoBehaviour
 			playerShip.name = "Player";
 			playerShip.transform.SetParent(this.transform); 
 			playerShip.transform.position = Vector3.zero;
+            playerShip.GetComponent<PlayerTransition>().enabled = true;
 	}
 }
