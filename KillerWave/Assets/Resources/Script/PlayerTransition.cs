@@ -13,9 +13,10 @@ public class PlayerTransition : MonoBehaviour
     bool levelStarted = true;
     bool speedOff = false;
     bool gameCompleted = false;
+    bool levelEnds = false;
  
 
-    public bool levelEnds
+    public bool LevelEnds
     {
         get {return levelEnds;}
         set {levelEnds = value;}

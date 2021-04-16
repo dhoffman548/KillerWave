@@ -24,9 +24,11 @@ public class PlayerSpawner : MonoBehaviour
 		{
 			GameManager.Instance.Died = false;
 			actorModel = Object.Instantiate(Resources.Load("Script/ScriptableObject/Player_Default")) as SOActorModel;
-			playerShip = GameObject.Instantiate(actorModel.actor,
-            this.transform.position,Quaternion.Euler(0,180,0)) as GameObject;
-			playerShip.GetComponent<IActorTemplate>().ActorStats(actorModel);
+            Debug.Log("Instantiating Player");
+            playerShip = GameObject.Instantiate(actorModel.actor) as GameObject;
+            Debug.Log("Player Instantiated");
+            //playerShip = GameObject.Instantiate(actorModel.actor, this.transform.position, Quaternion.Euler(0, 180, 0)) as GameObject;
+            playerShip.GetComponent<IActorTemplate>().ActorStats(actorModel);
 		}
 		    //apply the shop upgrades
 		else

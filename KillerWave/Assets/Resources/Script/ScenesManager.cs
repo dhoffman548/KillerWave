@@ -1,5 +1,6 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScenesManager : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class ScenesManager : MonoBehaviour
                             gameEnding = true;
                             if (SceneManager.GetActiveScene().name != "level3")
                             {
-                                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerTransition>().levelEnds = true;
+                                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerTransition>().LevelEnds = true;
                             }
                             else
                             {
@@ -88,5 +89,17 @@ public class ScenesManager : MonoBehaviour
     public void BeginGame(int gameLevel)
     {
         SceneManager.LoadScene(gameLevel);
+    }
+    private void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene aScene, LoadSceneMode aMode)
+    {
+        GetComponent<GameManager>().SetLivesDisplay(GameManager.playerLives);
+        if (GameObject.Find("score"))
+        {
+            GameObject.Find("score").GetComponent<Text>().text = ScoreManager.playerScore.ToString();
+        }
     }
 }
